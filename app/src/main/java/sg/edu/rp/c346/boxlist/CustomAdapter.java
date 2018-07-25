@@ -36,9 +36,9 @@ public class CustomAdapter extends ArrayAdapter {
         ImageView ivBoxes = rowView.findViewById(R.id.imageViewBlue);
 
         BoxListItem currentItem = boxList.get(position);
-        if (currentItem.isBlue()){
+        if (currentItem.getColor().equalsIgnoreCase("blue")){
             ivBoxes.setImageResource(R.drawable.blue_box);
-        } else if (currentItem.isOrange()){
+        } else if (currentItem.getColor().equalsIgnoreCase("orange")){
             ivBoxes.setImageResource(R.drawable.orange_box);
         } else {
             ivBoxes.setImageResource(R.drawable.brown_box);

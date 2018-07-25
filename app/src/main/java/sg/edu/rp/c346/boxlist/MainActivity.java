@@ -19,9 +19,9 @@ public class MainActivity extends AppCompatActivity {
         lvBox = findViewById(R.id.listViewBox);
 
         alBoxList = new ArrayList<>();
-        BoxListItem item1 = new BoxListItem(true,false,false);
-        BoxListItem item2 = new BoxListItem(false, true, false);
-        BoxListItem item3 = new BoxListItem(false,false,true);
+        BoxListItem item1 = new BoxListItem("blue");
+        BoxListItem item2 = new BoxListItem("orange");
+        BoxListItem item3 = new BoxListItem("brown");
         alBoxList.add(item1);
         alBoxList.add(item2);
         alBoxList.add(item3);
